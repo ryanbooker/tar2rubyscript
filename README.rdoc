@@ -24,7 +24,7 @@ http://github.com/cowlibob/rubyscript2exe, but as raw source in
 tar2rubyscript.
 
 I've released this as it appears the original project is no longer
-being maintained. Feel free to pull this into any authoratative
+being maintained. Feel free to pull this into any authoritative
 branch that may exist.
 
 
