@@ -1,0 +1,211 @@
+----------------------------------------------------------------
+
+0.4.8 - 08.03.2006
+
+* Fixed a bug concerning looping symlinks.
+
+* Fixed a bug concerning "Too many open files".
+
+* Added support for hard links and symbolic links (not on
+  Windows).
+
+----------------------------------------------------------------
+
+0.4.7 - 24.06.2005
+
+* Fixed a serious bug concerning this message: "doesn't contain
+  an init.rb" (Sorry...)
+
+----------------------------------------------------------------
+
+0.4.6 - 21.06.2005
+
+* Added both temporary directories to $: and ENV["PATH"].
+
+----------------------------------------------------------------
+
+0.4.5 - 23.03.2005
+
+* newlocation is an absolute path.
+
+* ENV["TEMP"] is an absolute path.
+
+* Files to include are searched for with *.* instead of * (on
+  Windows).
+
+* Added TAR2RUBYSCRIPT.
+
+----------------------------------------------------------------
+
+0.4.4 - 18.01.2005
+
+* Fixed a bug concerning read-only files.
+
+----------------------------------------------------------------
+
+0.4.3 - 13.01.2005
+
+* The changes made by tar2rubyscript.bat and tar2rubyscript.sh
+  aren't permanent anymore.
+
+* tar2rubyscript.bat and tar2rubyscript.sh now work for the TAR
+  archive variant as well.
+
+* Added support for long filenames in GNU TAR archives
+  (GNUTYPE_LONGNAME).
+
+* Enhanced the deleting of the temporary files.
+
+* Added support for ENV["PATH"].
+
+* Fixed a bug concerning multiple require-ing of (different)
+  init.rb's.
+
+* Fixed a bug concerning backslashes when creating the TAR
+  archive.
+
+----------------------------------------------------------------
+
+0.4.2 - 27.12.2004
+
+* Added support for multiple library RBA's.
+
+* Added the hourly touching of the files.
+
+* Added oldlocation to $: .
+
+----------------------------------------------------------------
+
+0.4.1 - 18.12.2004
+
+* Added --tar2rubyscript-list.
+
+* Put the temporary directory on top of $:, instead of at the
+  end, so the embedded libraries are preferred over the locally
+  installed libraries.
+
+* Fixed a bug when executing init.rb from within another
+  directory.
+
+----------------------------------------------------------------
+
+0.4.0 - 03.12.2004
+
+* Like packing related application files into one RBA
+  application, now you can as well pack related library files
+  into one RBA library.
+
+----------------------------------------------------------------
+
+0.3.8 - 26.03.2004
+
+* Under some circumstances, the Ruby script was replaced by the
+  tar archive when using --tar2rubyscript-totar.
+
+----------------------------------------------------------------
+
+0.3.7 - 22.02.2004
+
+* "ustar00" on Solaris isn't "ustar00", but "ustar\00000".
+
+----------------------------------------------------------------
+
+0.3.6 - 08.11.2003
+
+* Made the common test if __file__ == $0 work.
+
+----------------------------------------------------------------
+
+0.3.5 - 29.10.2003
+
+* The instance_eval solution gave me lots of troubles. Replaced
+  it with load.
+
+* --tar2rubyscript-totar added.
+
+----------------------------------------------------------------
+
+0.3.4 - 23.10.2003
+
+* I used eval has a method of the object that executes init.rb.
+  That wasn't a good name. Renamed it.
+
+* oldandnewlocation.rb added. It contains dummy procedures for
+  oldlocation and newlocation.
+
+----------------------------------------------------------------
+
+0.3.3 - 17.10.2003
+
+* No need of tar.exe anymore.
+
+----------------------------------------------------------------
+
+0.3.2 - 10.10.2003
+
+* The name of the output file is derived if it's not provided.
+
+----------------------------------------------------------------
+
+0.3.1 - 04.10.2003
+
+* Execution of tar2rubyscript.sh or tar2rubyscript.bat is
+  added.
+
+* Methods oldlocation and newlocation are added.
+
+----------------------------------------------------------------
+
+0.3 - 21.09.2003
+
+* Input can be a directory as well. (External tar needed!)
+
+----------------------------------------------------------------
+
+0.2 - 14.09.2003
+
+* Handling of --tar2rubyscript-* parameters is added.
+
+* --tar2rubyscript-justextract added.
+
+----------------------------------------------------------------
+
+0.1.5 - 09.09.2003
+
+* The ensure block (which deleted the temporary files after
+  evaluating init.rb) is transformed to an on_exit block. Now
+  the application can perform an exit and trap signals.
+
+----------------------------------------------------------------
+
+0.1.4 - 31.08.2003
+
+* After editing with edit.com on win32, files are converted
+  from LF to CRLF. So the CR's has to be removed.
+
+----------------------------------------------------------------
+
+0.1.3 - 29.08.2003
+
+* A much better (final?) patch for the previous bug. All open
+  files, opened in init.rb, are closed, before deleting them.
+
+----------------------------------------------------------------
+
+0.1.2 - 27.08.2003
+
+* A better patch for the previous bug.
+
+----------------------------------------------------------------
+
+0.1.1 - 19.08.2003
+
+* A little bug concerning file locking under Windows is fixed.
+
+----------------------------------------------------------------
+
+0.1 - 18.08.2003
+
+* First release.
+
+----------------------------------------------------------------
