@@ -8,6 +8,14 @@ of the original application. The script can then be distributed
 as a single file. However, it still requires Ruby and the 
 appropriate gems installed to run.
 
+There are two Ruby scripts:
+  - init.rb
+  - tarrubyscript.rb.
+  
+init.rb is the archiver that creates the compiled Ruby script, and 
+tarrubscript.rb is the launcher that is embedded in the compiled
+Ruby script.
+
 
 == Updated to handle Ruby 1.8.7
 
