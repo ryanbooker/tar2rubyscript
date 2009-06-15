@@ -1,13 +1,12 @@
 = Tar2RubyScript
 
-  Original Code: http://www.erikveen.dds.nl/rubyscript2exe
+Original Code: http://www.erikveen.dds.nl/rubyscript2exe
 
 Tar2RubyScript transforms your application directory tree into
 a single Ruby script containing a launcher script and an archive
-of the original application.
-
-This script can thenbe distributed as a single file. However, it
-still requires Ruby and the appropriate gems installed to run.
+of the original application. The script can then be distributed 
+as a single file. However, it still requires Ruby and the 
+appropriate gems installed to run.
 
 
 == Updated to handle Ruby 1.8.7
@@ -23,4 +22,7 @@ To build the repository simply run:
   ruby tar2rubyscript/init.rb tar2rubyscript/
 
 The script will compile itself into a distributable Ruby script
-archive that can be used to compile other Ruby applications.
+archive (tar2rubyscript.rb) that can be used to compile other 
+Ruby applications.
+
+  ruby tar2rubyscript.rb myapp/
